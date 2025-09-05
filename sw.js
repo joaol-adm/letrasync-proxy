@@ -1,8 +1,10 @@
+
 self.addEventListener("install", (e) => {
+  self.skipWaiting();
   e.waitUntil(
-    caches.open("static").then((cache) =>
-      cache.addAll(["./", "./index.html", "./app.js", "./manifest.json", "./icon-192.png"])
-    )
+    caches.open("letrasync-v1").then((cache) => {
+      return cache.addAll(["/", "/index.html", "/app.js", "/manifest.json"]);
+    })
   );
 });
 
