@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="manifest" href="manifest.json" />
+  <title>LetraSync</title>
+  <style>
+    body { font-family: sans-serif; text-align: center; padding: 1rem; }
+    #lyrics { white-space: pre-wrap; margin-top: 1rem; }
+    #reader { width: 100%; max-width: 400px; margin: auto; }
+  </style>
+</head>
+<body>
+  <h1>LetraSync</h1>
+  <p>Escaneie um QR Code com o link da letra da música</p>
+  <div id="reader"></div>
+  <pre id="lyrics">Aguardando leitura do QR Code...</pre>
+  <script src="https://unpkg.com/html5-qrcode"></script>
+  <script src="app.js"></script>
+</body>
+</html>
